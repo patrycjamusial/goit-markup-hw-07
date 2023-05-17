@@ -82,44 +82,38 @@
                 Zostaw swoje dane w formularzu poniżej
               </h3>
               <form class="modal__form">
-                <label>
-                  <p>Imię</p>
-                  <div class="modal__form-input">
-                    <svg width="18px" height="18px" class="modal__icon">
-                      <use href="./images/icons.svg#icon-person-black"></use>
-                    </svg>
-                    <input type="text" name="name" class="modal__input" />
-                  </div>
+                <span>Imię</span>
+                <label class="modal__form-input">
+                  <svg width="18px" height="18px" class="modal__icon">
+                    <use href="./images/icons.svg#icon-person-black"></use>
+                  </svg>
+                  <input type="text" name="name" class="modal__input" />
                 </label>
-                <label>
-                  <p>Telefon</p>
-                  <div class="modal__form-input">
-                    <svg width="18px" height="18px" class="modal__icon">
-                      <use href="./images/icons.svg#icon-phone-black"></use>
-                    </svg>
-                    <input type="tel" name="telephone" class="modal__input" />
-                  </div>
+                <span>Telefon</span>
+                <label class="modal__form-input">
+                  <svg width="18px" height="18px" class="modal__icon">
+                    <use href="./images/icons.svg#icon-phone-black"></use>
+                  </svg>
+                  <input type="tel" name="telephone" class="modal__input" />
                 </label>
-                <label>
-                  <p>E-mail</p>
-                  <div class="modal__form-input">
-                    <svg width="18px" height="18px" class="modal__icon">
-                      <use href="./images/icons.svg#icon-email-black"></use>
-                    </svg>
-                    <input type="email" name="email" class="modal__input" />
-                  </div>
-                </label>
-                <label>
-                  <p>Komentarz</p>
-                  <div class="modal__form-input">
-                    <textarea
-                      type="text"
-                      name="comment"
-                      rows="6"
-                      placeholder="Wprowadź tekst"
-                      class="modal__input"
-                    ></textarea>
-                  </div>
+                <span>E-mail</span>
+                <label class="modal__form-input">
+                  <svg width="18px" height="18px" class="modal__icon">
+                    <use href="./images/icons.svg#icon-email-black"></use>
+                  </svg>
+                  <input
+                    type="email"
+                    name="email"
+                    class="modal__input"
+                  /> </label
+                ><span>Komentarz</span>
+                <label class="modal__form-input">
+                  <textarea
+                    name="comment"
+                    rows="6"
+                    placeholder="Wprowadź tekst"
+                    class="modal__input"
+                  ></textarea>
                 </label>
                 <div class="checkbox">
                   <input
@@ -202,10 +196,10 @@
           </ul>
         </div>
       </section>
-      <section class="section">
+      <section class="section--work section">
         <div class="container">
           <h2 class="section__title">Czym się zajmujemy</h2>
-          <ul class="grid grid__work">
+          <ul class="grid__work">
             <li class="grid__work-img">
               <img
                 src="images/klawiatura.jpg"

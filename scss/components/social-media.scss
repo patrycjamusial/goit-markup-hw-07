@@ -19,26 +19,26 @@
       border-radius: 50%;
       cursor: pointer;
     }
+    &-footer {
+      padding: 12px;
+      fill: $colorThird;
+      background-color: #ffffff10;
+      border-radius: 50%;
+      display: flex;
+      transition-property: fill, background-color, border-radius;
+      transition-duration: $transitionDuration;
+      transition-timing-function: $transitionTimingFunction;
+      &:hover,
+      &:focus {
+        fill: $colorThird;
+        background-color: $colorSecondary;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+    }
   }
   &__footer {
     display: flex;
     column-gap: 10px;
-  }
-  &__link-footer {
-    padding: 12px;
-    fill: $colorThird;
-    background-color: #ffffff10;
-    border-radius: 50%;
-    display: flex;
-    transition-property: fill, background-color, border-radius;
-    transition-duration: $transitionDuration;
-    transition-timing-function: $transitionTimingFunction;
-    &:hover,
-    &:focus {
-      fill: $colorThird;
-      background-color: $colorSecondary;
-      border-radius: 50%;
-      cursor: pointer;
-    }
   }
 }

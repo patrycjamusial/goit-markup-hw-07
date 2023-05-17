@@ -25,17 +25,17 @@
     &:focus {
       color: $colorSecondary;
     }
-  }
-  &__link--active {
-    &::after {
-      content: "";
-      position: absolute;
-      background: $colorSecondary;
-      border-radius: 2px;
-      width: 100%;
-      height: 4px;
-      margin-top: 28px;
-      display: block;
+    &--active {
+      &::after {
+        content: "";
+        position: absolute;
+        background: $colorSecondary;
+        border-radius: 2px;
+        width: 100%;
+        height: 4px;
+        margin-top: 28px;
+        display: block;
+      }
     }
   }
 }

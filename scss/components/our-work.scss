@@ -1,11 +1,9 @@
 @use "../utils/variables" as *;
-.grid {
-  &__work {
-    display: flex;
-    column-gap: 30px;
-    justify-content: space-around;
-  }
-  &__work-img {
+.grid__work {
+  display: flex;
+  column-gap: 30px;
+  justify-content: space-around;
+  &-img {
     display: flex;
     position: relative;
     > .grid__work-dsc {

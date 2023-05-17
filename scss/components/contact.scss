@@ -18,6 +18,9 @@
     &:hover,
     &:focus {
       color: $colorSecondary;
+      .contact__icon {
+        fill: $colorSecondary;
+      }
     }
   }
   &__link-footer {
@@ -61,15 +64,15 @@
     }
     &-join-us {
       justify-content: flex-start;
-    }
-    &-join-us-title {
-      color: $colorThird;
-      font-weight: $fontWeightBold;
-      font-size: 14px;
-      line-height: $lineHeightTitle;
-      letter-spacing: $letterSpacingTitle;
-      margin-top: 12px;
-      margin-bottom: 20px;
+      &-title {
+        color: $colorThird;
+        font-weight: $fontWeightBold;
+        font-size: 14px;
+        line-height: $lineHeightTitle;
+        letter-spacing: $letterSpacingTitle;
+        margin-top: 12px;
+        margin-bottom: 20px;
+      }
     }
   }
   &__address {
@@ -79,11 +82,5 @@
     letter-spacing: $letterSpacingTitle;
     display: flex;
     padding-bottom: 9px;
-  }
-}
-.contact__link-header:hover,
-.contact__link-header:focus {
-  .contact__icon {
-    fill: $colorSecondary;
   }
 }

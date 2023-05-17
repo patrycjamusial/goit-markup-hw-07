@@ -32,16 +32,17 @@
       transition-property: border-color;
       transition-duration: $transitionDuration;
       transition-timing-function: $transitionTimingFunction;
+      &:focus-within,
+      &:hover {
+        border-color: $colorSecondary;
+      }
+      &:focus-within .modal__icon,
+      &:hover .modal__icon {
+        fill: $colorSecondary;
+      }
     }
-    &-input:focus-within,
-    &-input:hover {
-      border-color: $colorSecondary;
-    }
-    &-input:focus-within .modal__icon,
-    &-input:hover .modal__icon {
-      fill: $colorSecondary;
-    }
-    label p {
+
+    span {
       display: flex;
       font-size: 12px;
       line-height: $lineHeightTitle;
